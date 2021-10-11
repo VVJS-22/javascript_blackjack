@@ -10,9 +10,12 @@ export const Wrapper = styled.section`
         background: radial-gradient(circle, rgba(42,80,25,1) 43%, rgba(25,52,12,1) 87%);
         width: 90%;
         border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
 
         .card-area {
-            height: 82%;
+            /* min-height: 82%; */
+            flex: 1;
             display: flex;
             padding: 0.875rem;
             
@@ -28,20 +31,22 @@ export const Wrapper = styled.section`
         }
 
         .button-area {
-            height: 18%;
+            /* min-height: 18%; */
 
             .inner-button-area {
-                height: 100%;
                 border-top: 2px solid #000;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                padding: 0.875rem;
+                
                 .button-flex {
                     border: 1px solid #000;
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: center;
                     padding: 1rem;
+                    /* margin: 0 0.875rem; */
                 }
             }
         }
