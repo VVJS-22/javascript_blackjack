@@ -1,6 +1,5 @@
 import {
     Header,
-    Button,
     Board,
     Result,
     Table
@@ -11,11 +10,9 @@ import styled from 'styled-components'
 const home = () => {
     return (
         <Wrapper>
-            <h1>This is Home</h1>
             <Header />
             <Result />
             <Board />
-            <Button />
             <Table />
         </Wrapper>
     )

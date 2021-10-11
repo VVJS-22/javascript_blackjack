@@ -1,8 +1,37 @@
+import { Wrapper } from '../styles/board'
+import Button from './Button'
+
 const Board = () => {
     return (
-        <div>
-            
-        </div>
+        <Wrapper>
+            <section>
+                <div className="card-area">
+                    <div className="you"></div>
+                    <div className="dealer"></div>
+                </div>
+                <div className="button-area">
+                    <div className="inner-button-area">
+                        <div className="button-flex">
+                            <Button 
+                            text="Hit"
+                            bgColor="#08f"
+                            color="#fff"
+                            />
+                            <Button
+                            text="Stand"
+                            bgColor="#ead408"
+                            color="#000"
+                            />
+                            <Button
+                            text="Deal"
+                            bgColor="#f30"
+                            color="#fff"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </Wrapper>
     )
 }
 

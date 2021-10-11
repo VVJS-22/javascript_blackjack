@@ -1,19 +1,12 @@
-import styled from 'styled-components'
+import { Wrapper } from '../styles/result'
 
 const Result = () => {
     return (
         <Wrapper>
-            <h1>
-            This is Result
-            </h1>
+            <h2>Let's Play</h2>
         </Wrapper>
     )
 }
 
 export default Result
 
-const Wrapper = styled.div`
-    h1 {
-        font-size: 5rem;
-    }
-`

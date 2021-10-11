@@ -8,9 +8,12 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         border: none;
         outline: none;
+        line-height: 1.5;
+        color: #fff
     }
 
-    h1 {
-        color: #fff;
+    html,body,#root {
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
     }
 `
