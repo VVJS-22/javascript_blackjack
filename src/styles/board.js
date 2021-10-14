@@ -32,6 +32,7 @@ export const Wrapper = styled.section`
 
         .button-area {
             /* min-height: 18%; */
+            /* flex: 1; */
 
             .inner-button-area {
                 border-top: 2px solid #000;

@@ -6,8 +6,13 @@ export const Wrapper = styled.button`
     color: ${({color}) => (color)};
     border-radius: 0.25rem;
     font-size: 1rem;
+    cursor: pointer;
 
     &:not(:first-of-type) {
         margin-left: 1rem;
+    }
+
+    &:hover {
+        background:  ${({hoverColor}) => (hoverColor)};
     }
 `

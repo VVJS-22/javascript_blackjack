@@ -8,7 +8,8 @@ const Header = () => {
             <Button
             text="Help?"
             color="#fff"
-            bgColor="#797979"
+            bgColor="hsl(126,84%,31%)"
+            hoverColor="hsl(126,84%,25%)"
             />
         </Wrapper>
     )

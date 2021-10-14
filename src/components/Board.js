@@ -16,16 +16,19 @@ const Board = () => {
                             text="Hit"
                             bgColor="#08f"
                             color="#fff"
+                            hoverColor="hsl(208,100%,40%)"
                             />
                             <Button
                             text="Stand"
                             bgColor="#ead408"
+                            hoverColor="hsl(54,93%,40%)"
                             color="#000"
                             />
                             <Button
                             text="Deal"
                             bgColor="#f30"
                             color="#fff"
+                            hoverColor="hsl(12,100%,40%)"
                             />
                         </div>
                     </div>
