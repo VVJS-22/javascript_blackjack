@@ -3,7 +3,7 @@ import styled from "styled-components/macro"
 export const Wrapper = styled.section`
     min-height: 50px;
     color: #fff;
-    position: relative;
+    /* position: relative; */
     h1 {
         text-align: center;
         font-size: 2rem;
@@ -11,7 +11,9 @@ export const Wrapper = styled.section`
     }
     button {
         position: absolute;
-        top: 1.25rem;
-        right: 1.25rem;
+        top: ${({top}) => (top)};
+        right: ${({right}) => (right)};
+        bottom: ${({bottom}) => (bottom)};
+        left: ${({left}) => (left)};
     }
 `

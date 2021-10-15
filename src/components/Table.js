@@ -1,5 +1,5 @@
 import { Wrapper } from '../styles/table'
- 
+
 const Table = () => {
     return (
         <Wrapper>

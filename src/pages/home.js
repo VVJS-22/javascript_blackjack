@@ -5,12 +5,20 @@ import {
     Table
 } from '../components'
 
-import styled from 'styled-components'
+import { Wrapper } from '../styles/pageWrapper'
 
 const home = () => {
     return (
-        <Wrapper>
-            <Header />
+        <Wrapper
+        bgColor = "#3f3f3f"
+        >
+            <Header 
+            title  = "BlackJack"
+            text = "Help?"
+            path  = "/help"
+            top = "1.25rem"
+            right = "1.25rem"
+            />
             <Result />
             <Board />
             <Table />
@@ -20,10 +28,7 @@ const home = () => {
 
 export default home
 
-const Wrapper = styled.section`
-    background: #3f3f3f;
-    min-height: 100vh;
-`
+
 
 
 // rgb #rrggbb #000000 #ffffff #ff0000 #00ff00 #0000ff  #3f3f3f
