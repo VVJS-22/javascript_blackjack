@@ -1,4 +1,4 @@
-import { Header, Instruction } from '../components'
+import { Header, Instruction, Button } from '../components'
 import { Wrapper} from '../styles/pageWrapper'
 
 const help = () => {
@@ -8,16 +8,20 @@ const help = () => {
         >
             <Header 
             title  = "How To Play"
-            text = "Let's Play"
+            // text = "Let's Play"
             path = "/"
-            bottom = "1.25rem"
-            left = "50%"
-            style = {
-                {
-                    transform: `translateX(-50%)`
-                }
-            }
-            />
+            >
+                <Button
+                text="Let's Play"
+                color="#3f3f3f"
+                bgColor="#fff"
+                hoverColor="hsl(0,30%,90%)"
+                bottom = "1.25rem"
+                left = "50%"
+                center = "translateX(-50%)"
+                position = "fixed"
+                />
+            </Header>
             <Instruction  />
         </Wrapper>
     )

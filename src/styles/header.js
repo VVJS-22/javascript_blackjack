@@ -9,11 +9,4 @@ export const Wrapper = styled.section`
         font-size: 2rem;
         padding: 1rem 1.2rem;
     }
-    button {
-        position: absolute;
-        top: ${({top}) => (top)};
-        right: ${({right}) => (right)};
-        bottom: ${({bottom}) => (bottom)};
-        left: ${({left}) => (left)};
-    }
 `
