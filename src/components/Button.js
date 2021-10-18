@@ -1,9 +1,14 @@
 import { Wrapper } from '../styles/button'
 
-const Button = ({ text, ...restProps}) => {
+const Button = ({ text,func, ...restProps }) => {
     // const { text, bgColor } = props
     return (
-        <Wrapper {...restProps}>{text}</Wrapper>
+        <Wrapper 
+        {...restProps}
+        onClick = {() => func && func()}
+        >
+            {text}
+        </Wrapper>
     )
 }
 

@@ -1,7 +1,9 @@
 const Instruction = () => {
     return (
         <div>
-            this is instruction
+            <p>kditykfikgvj,kl</p>
+            <p>yuugiriklubguy</p>
+            <p>giukltklhigklivf,</p>
         </div>
     )
 }

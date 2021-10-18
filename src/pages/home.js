@@ -7,8 +7,10 @@ import {
 } from '../components'
 
 import { Wrapper } from '../styles/pageWrapper'
+import useHit from '../hooks/useHit'
 
-const home = () => {
+const Home = () => {
+    const [blackjackHit] = useHit()
     return (
         <Wrapper
         bgColor = "#3f3f3f"
@@ -29,13 +31,33 @@ const home = () => {
                 />
             </Header>
             <Result />
-            <Board />
+            <Board>
+                <Button 
+                    text="Hit"
+                    bgColor="#08f"
+                    color="#fff"
+                    hoverColor="hsl(208,100%,40%)"
+                    func={blackjackHit}
+                />
+                <Button
+                    text="Stand"
+                    bgColor="#ead408"
+                    hoverColor="hsl(54,93%,40%)"
+                    color="#000"
+                />
+                <Button
+                    text="Deal"
+                    bgColor="#f30"
+                    color="#fff"
+                    hoverColor="hsl(12,100%,40%)"
+                />
+            </Board>
             <Table />
         </Wrapper>
     )
 }
 
-export default home
+export default Home
 
 
 

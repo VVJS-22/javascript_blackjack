@@ -28,6 +28,11 @@ export const Wrapper = styled.section`
                 border: 1px solid #000;
                 flex: 1;
             }
+
+            h2 {
+                text-align: center;
+                padding: 1rem;
+            }
         }
 
         .button-area {
